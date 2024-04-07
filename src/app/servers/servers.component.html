@@ -1,5 +1,18 @@
 <p>servers works!</p>
 <hr>
+<label for="">Server Name : </label>
+<input type="text" class="form-control" (input)="onServerUpdate($event)">
+<hr>
+<input type="text" class="form-control" [(ngModel)]="serverName">
+<hr>
+{{serverName}}
+<hr>
+<button class="btn-primary" [disabled]="!allowServerStatus" (click)="onServerCreation()">Add Server</button>
+<hr>
+<span>{{serverCreationStatus}}</span>
+<hr>
 <app-server></app-server>
 <hr>
 <app-server></app-server>
+<hr>
+<button class="btn-info" [disabled]="getServerStatus()">Add Server</button>

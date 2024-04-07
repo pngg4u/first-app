@@ -8,7 +8,9 @@ import { Component } from '@angular/core';
     <hr>
     <app-server></app-server>
     <hr>
-    <app-server></app-server>
+    <div app-server-client></div>
+    <hr>
+    <span class="app-server-client-class"></span>
   `,
   //templateUrl: './servers-without-urls.component.html',
   //styleUrls: ['./servers-without-urls.component.css']
